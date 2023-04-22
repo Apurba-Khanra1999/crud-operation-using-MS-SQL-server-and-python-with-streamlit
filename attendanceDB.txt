@@ -1,0 +1,15 @@
+create database attendanceDB
+use attendance
+
+create table students(
+studentId int primary key identity(1,1),
+name varchar(255),
+city varchar(255),
+age int,
+phoneNo bigint,
+emailId varchar(255)
+);
+
+insert into students(name,city,age,phoneNo,emailId) values('Apurba Khanra','konnagar',23,8240200599,'apurba@gmail.com'),
+('Keshav Gupta','uttarpara',25,7896517950,'keshav@gmail.com')
+select * from students
